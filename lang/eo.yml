@@ -1,0 +1,17 @@
+eo:
+  GRIDFIELD_BULKMANAGER_EDIT_HANDLER:
+    CANCEL_BTN_LABEL: Nuligi
+    HEADER_TEXT: 'Redaktas {count} {class}'
+    SAVE_BTN_LABEL: 'Konservi ĉion'
+    SAVE_RESULT_TEXT: '{count} {class} sukcese konservita.'
+    TOGGLE_ALL_LINK: 'Vidigi/kaŝi ĉion'
+  GRIDFIELD_BULK_MANAGER:
+    ACTION_BTN_LABEL: Iri
+    ARCHIVE_SELECT_LABEL: Enarkivigi
+    COMPONENT_TITLE: 'Ŝanĝi elementojn unuope aŭ pliope.'
+    DELETE_SELECT_LABEL: Forigi
+    EDIT_SELECT_LABEL: Redakti
+    PUBLISH_SELECT_LABEL: Publikigi
+    SELECT_ALL_LABEL: 'Elekti ĉiujn'
+    UNLINK_SELECT_LABEL: Malligi
+    UNPUBLISH_SELECT_LABEL: Malpublikigi

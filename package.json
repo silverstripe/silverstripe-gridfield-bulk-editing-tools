@@ -27,10 +27,6 @@
   ],
   "author": "Thierry Francois",
   "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/colymba/GridFieldBulkEditingTools/issues"
-  },
-  "homepage": "https://github.com/colymba/GridFieldBulkEditingTools",
   "dependencies": {
     "core-js": "^3.26.0"
   },
