@@ -1,0 +1,17 @@
+sl:
+  GRIDFIELD_BULKMANAGER_EDIT_HANDLER:
+    CANCEL_BTN_LABEL: Prekliči
+    HEADER_TEXT: 'Urejanje {count} iz {class}'
+    SAVE_BTN_LABEL: 'Shrani vse'
+    SAVE_RESULT_TEXT: 'Uspešno shranjeno {count} iz {class} '
+    TOGGLE_ALL_LINK: 'Prikaži/skrij vse'
+  GRIDFIELD_BULK_MANAGER:
+    ACTION_BTN_LABEL: Sproži
+    ARCHIVE_SELECT_LABEL: Arhiviraj
+    COMPONENT_TITLE: 'Uredi enega ali več vnosov hkrati.'
+    DELETE_SELECT_LABEL: Izbriši
+    EDIT_SELECT_LABEL: Uredi
+    PUBLISH_SELECT_LABEL: Objavi
+    SELECT_ALL_LABEL: 'Izberi vse'
+    UNLINK_SELECT_LABEL: Odpni
+    UNPUBLISH_SELECT_LABEL: 'Umakni iz objave'

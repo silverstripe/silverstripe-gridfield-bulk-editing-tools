@@ -10,4 +10,5 @@ ru:
     COMPONENT_TITLE: 'Редактировать одну или несколько записей одновременно'
     DELETE_SELECT_LABEL: Удалить
     EDIT_SELECT_LABEL: Редактировать
+    SELECT_ALL_LABEL: 'Выбрать все'
     UNLINK_SELECT_LABEL: Отвязать
