@@ -3,12 +3,13 @@
 namespace Colymba\BulkUpload;
 
 use Colymba\BulkTools\HTTPBulkToolsResponse;
+use SilverStripe\Assets\File;
 use SilverStripe\Control\Controller;
 use SilverStripe\Control\RequestHandler;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Control\HTTPResponse;
+use SilverStripe\ORM\ManyManyList;
 use SilverStripe\Versioned\RecursivePublishable;
-
 use SilverStripe\AssetAdmin\Controller\AssetAdmin;
 
 /**
@@ -76,17 +77,26 @@ class BulkUploadHandler extends RequestHandler
      */
     protected function createDataObject($fileID)
     {
-        $recordClass = $this->component->getRecordClassName($this->gridField);
-        $record = $recordClass::create();
-        $record->write();
+        $gridFieldList = $this->gridField->list;
+        $isManyManyFileList = $gridFieldList instanceof ManyManyList && $gridFieldList->dataClass === File::class;
+
+        if ($isManyManyFileList) {
+            $record = File::get_by_id($fileID);
+        } else {
+            $recordClass = $this->component->getRecordClassName($this->gridField);
+            $record = $recordClass::create();
+            $record->write();
+        }
 
         $record->extend('onBulkUpload', $this->gridField, $fileID, $record);
 
-        $fileRelationName = $this->component->getFileRelationName($this->gridField);
-        $record->{"{$fileRelationName}ID"} = $fileID;
-        $record->write(); //HasManyList call write on record but not ManyManyList, so we call it here again
+        if (!$isManyManyFileList) {
+            $fileRelationName = $this->component->getFileRelationName($this->gridField);
+            $record->{"{$fileRelationName}ID"} = $fileID;
+            $record->write(); //HasManyList call write on record but not ManyManyList, so we call it here again
+        }
         
-        $this->gridField->list->add($record);
+        $gridFieldList->add($record);
 
         if (
             $this->component->getAutoPublishDataObject()
