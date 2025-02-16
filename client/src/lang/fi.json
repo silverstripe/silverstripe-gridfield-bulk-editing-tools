@@ -1,5 +1,0 @@
-{
-    "GRIDFIELD_BULK_UPLOAD.PROGRESS_INFO": "Lataa %s tiedosto(ja). %s Valmis. %s virhe(itä).",
-    "GRIDFIELD_BULK_MANAGER.BULKACTION_EMPTY_SELECT": "Sinun täytyy valita vähintään yksi tallenne. ",
-    "GRIDFIELD_BULK_MANAGER.CONFIRM_DESTRUCTIVE_ACTION": "Tiedostosi häviävät pysyvästi. Haluatko jatkaa?"
-}
