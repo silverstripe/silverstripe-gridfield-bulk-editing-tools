@@ -1,0 +1,5 @@
+{
+    "GRIDFIELD_BULK_MANAGER.BULKACTION_EMPTY_SELECT": "Sie müssen mindestens ein Element auswählen.",
+    "GRIDFIELD_BULK_MANAGER.CONFIRM_DESTRUCTIVE_ACTION": "Wollen Sie dieses Element wirklich unwiderruflich löschen?",
+    "GRIDFIELD_BULK_UPLOAD.PROGRESS_INFO": "Übertrage %s Datei(en). %s erfolgreich übertragen. %s Fehler."
+}

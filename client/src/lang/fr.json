@@ -1,5 +1,0 @@
-{
-    "GRIDFIELD_BULK_UPLOAD.PROGRESS_INFO": "%s fichier(s) en transfert. %s terminer. %s erreur(s).",
-    "GRIDFIELD_BULK_MANAGER.BULKACTION_EMPTY_SELECT": "Vous devez sélectionner au moins une entrée.",
-    "GRIDFIELD_BULK_MANAGER.CONFIRM_DESTRUCTIVE_ACTION": "Les données serons perdu définitivement. Voulez vous continuer?"
-}
