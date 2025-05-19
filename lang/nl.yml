@@ -3,11 +3,16 @@ nl:
     CANCEL_BTN_LABEL: Annuleren
     HEADER_TEXT: '{count} {class} aan het bewerken'
     SAVE_BTN_LABEL: 'Alles opslaan'
+    SAVE_RESULT_TEXT: '{count} {class} succesvol opgeslagen.'
     TOGGLE_ALL_LINK: 'Toon/verberg alle'
   GRIDFIELD_BULK_MANAGER:
     ACTION_BTN_LABEL: Gaan
+    ARCHIVE_SELECT_LABEL: Archiveer
     COMPONENT_TITLE: 'Bewerk één of meerdere items tegelijkertijd'
     DELETE_SELECT_LABEL: Verwijderen
     EDIT_SELECT_LABEL: Bewerken
+    PUBLISH_SELECT_LABEL: Publiceer
     SELECT_ALL_LABEL: 'Selecteer alles'
+    SELECT_LABEL: Selecteer
     UNLINK_SELECT_LABEL: Loskoppelen
+    UNPUBLISH_SELECT_LABEL: Depubliceer

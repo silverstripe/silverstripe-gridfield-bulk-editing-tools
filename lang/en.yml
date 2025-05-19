@@ -8,7 +8,7 @@ en:
   GRIDFIELD_BULK_MANAGER:
     ACTION_BTN_LABEL: Go
     ARCHIVE_SELECT_LABEL: Archive
-    COMPONENT_TITLE: 'Modify one or more entry at a time.'
+    COMPONENT_TITLE: 'Modify one or more entry at a time'
     DELETE_SELECT_LABEL: Delete
     EDIT_SELECT_LABEL: Edit
     PUBLISH_SELECT_LABEL: Publish
