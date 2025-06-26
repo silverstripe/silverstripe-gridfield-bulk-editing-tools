@@ -173,7 +173,7 @@ class EditHandler extends Handler
 
         //fetch fields for each record and push to fieldList
         foreach ($recordList as $id) {
-            $record = DataObject::get_by_id($modelClass, $id);
+            $record = DataObject::get($modelClass)->setUseCache(true)->byID($id);
             $recordEditingFields = $this->getRecordEditingFields($record);
 
             $toggleField = ToggleCompositeField::create(
@@ -237,7 +237,7 @@ class EditHandler extends Handler
         //generate a form with only that requested record's fields
         if ($id) {
             $modelClass = $this->gridField->getModelClass();
-            $record = DataObject::get_by_id($modelClass, $id);
+            $record = DataObject::get($modelClass)->setUseCache(true)->byID($id);
 
             $cmsFields = $record->getCMSFields();
             $recordEditingFields = $this->getRecordEditingFields($record);
@@ -414,7 +414,7 @@ class EditHandler extends Handler
 
         //process each record's form data and save
         foreach ($formsData as $recordID => $recordData) {
-            $record = DataObject::get_by_id($className, $recordID);
+            $record = DataObject::get($className)->setUseCache(true)->byID($recordID);
             $recordForm = Form::create(
                 $this,
                 'RecordForm',
