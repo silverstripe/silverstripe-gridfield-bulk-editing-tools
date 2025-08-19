@@ -50,4 +50,4 @@ Perform actions on multiple records straight from the GridField
 $config->addComponent(new \Colymba\BulkManager\BulkManager());
 ```
 
-See [BULK_MANAGER.md](docs/en//BULK_MANAGER.md) for detailed configuration.
+For full configuration options, see the [Bulk Manager documentation](docs/en/01_bulk-manager.md).
