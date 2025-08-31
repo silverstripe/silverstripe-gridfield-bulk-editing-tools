@@ -1,11 +1,4 @@
-.bulkUploader
-{
-	.uploadfield__droptext
-	{
-		&:before
-		{
-			text-transform: none;
-			content: "b";
-		}
-	}
+.bulkUploader .uploadfield__droptext .uploadfield__dropicon:before {
+  // equivalent of font-icon-upload
+  content: "b";
 }
