@@ -98,11 +98,15 @@ jQuery.entwine('colymba', ($) => {
       const value = $(this).val();
       const $parent = $(this).parents('.bulkManagerOptions');
       const $btn = $parent.find('.doBulkActionButton');
+      const $icon = $btn.find('.doBulkActionButton__icon');
       const config = $btn.data('config');
 
       $.each(config, (configKey, configData) => {
         if (configKey !== value) {
-          $btn.removeClass(configData.buttonClasses);
+          const fontIconClasses = configData.buttonClasses.match(/font-icon-[^\s]+/g);
+          const nonFontIconClasses = configData.buttonClasses.split(' ').filter((item) => !fontIconClasses.includes(item));
+          $btn.removeClass(nonFontIconClasses);
+          $icon.removeClass(fontIconClasses);
         }
       });
 
@@ -113,7 +117,10 @@ jQuery.entwine('colymba', ($) => {
 
       $btn.removeClass('disabled');
 
-      $btn.addClass(config[value].buttonClasses).addClass('btn-outline-secondary');
+      const fontIconClasses = config[value].buttonClasses.match(/font-icon-[^\s]+/g);
+      const nonFontIconClasses = config[value].buttonClasses.split(' ').filter((item) => !fontIconClasses.includes(item));
+      $btn.addClass(nonFontIconClasses).addClass('btn-outline-secondary');
+      $icon.addClass(fontIconClasses);
 
       if (config[value].icon) {
         const $img = $btn.find('img');

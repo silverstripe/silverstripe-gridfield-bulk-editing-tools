@@ -7,6 +7,7 @@
             data-config="$Button.DataConfig"
             title="<%t GRIDFIELD_BULK_MANAGER.COMPONENT_TITLE 'Modify one or more entry at a time' %>"
             class="doBulkActionButton disabled btn btn-outline-secondary">
+            <span class="doBulkActionButton__icon" aria-hidden="true"></span>
             $Button.Label
         </a>
 
