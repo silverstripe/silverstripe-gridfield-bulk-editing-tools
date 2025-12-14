@@ -305,7 +305,7 @@ class EditHandler extends Handler
                 $dataFields[$fieldName] = $fields->dataFieldByName($fieldName);
             }
         } else {
-            $dataFields = $fields->dataFields();
+            $dataFields = $fields->getDataFields();
         }
 
         // escape field names with unique prefix
