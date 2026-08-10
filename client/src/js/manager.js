@@ -104,7 +104,7 @@ jQuery.entwine('colymba', ($) => {
       $.each(config, (configKey, configData) => {
         if (configKey !== value) {
           const fontIconClasses = configData.buttonClasses.match(/font-icon-[^\s]+/g);
-          const nonFontIconClasses = configData.buttonClasses.split(' ').filter((item) => !fontIconClasses.includes(item));
+          const nonFontIconClasses = configData.buttonClasses.split(' ').filter((item) => !fontIconClasses?.includes(item));
           $btn.removeClass(nonFontIconClasses);
           $icon.removeClass(fontIconClasses);
         }
@@ -118,7 +118,7 @@ jQuery.entwine('colymba', ($) => {
       $btn.removeClass('disabled');
 
       const fontIconClasses = config[value].buttonClasses.match(/font-icon-[^\s]+/g);
-      const nonFontIconClasses = config[value].buttonClasses.split(' ').filter((item) => !fontIconClasses.includes(item));
+      const nonFontIconClasses = config[value].buttonClasses.split(' ').filter((item) => !fontIconClasses?.includes(item));
       $btn.addClass(nonFontIconClasses).addClass('btn-outline-secondary');
       $icon.addClass(fontIconClasses);
 
