@@ -7,3 +7,4 @@
 **/css/bourbon
 **/.sass-cache
 node_modules/
+/.yarn/
