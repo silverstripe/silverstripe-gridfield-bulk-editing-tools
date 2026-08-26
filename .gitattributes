@@ -1,1 +1,3 @@
 /.gitignore export-ignore
+/.yarnrc.yml export-ignore
+/yarn.lock export-ignore
